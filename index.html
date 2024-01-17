@@ -152,28 +152,34 @@
 						</header>
 						<div class="content">
 							<p><strong>Let's talk about working together</strong><br>Write to me</p>
-							<form>
 								<div class="fields">
 									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
 									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
 									</div>
 									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
 								</ul>
+							</form><form action="https://api.web3forms.com/submit" method="POST">
+
+								<input type="hidden" name="access_key" value="da41be88-c188-40d9-b568-7ca05c5d356a">
+							
+								<input type="Text" name="Name" id="Name" placeholder="Name" required><br>
+								<input type="Email" name="Email" id="Email" placeholder="Email" required><br>
+								<textarea name="Message" name="Message" id="Message" placeholder="Message" required></textarea><br>
+								<div class="h-captcha" data-captcha="true"></div>
+								<button type="submit">Send Message</button>
+							
 							</form>
+							
+							<script src="https://web3forms.com/client/script.js" async defer></script>
 						</div>
 						<footer>
 							<ul class="items">
 								<li>
 									<h3>Email</h3>
-									<a href="#">danielyurkovsky@gmail.com</a>
+									<a href="https://mail.google.com/mail/u/1/#inbox?compose=new">danielyurkovsky@gmail.com</a>
 								</li>
 								<li>
 									<h3>Phone</h3>
